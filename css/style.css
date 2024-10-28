@@ -224,21 +224,6 @@ body {
 
 .burger-item-button {
     background-color: #ff6347;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.95rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.burger-item-button:hover {
-    background-color: #e5533d;
-}
-
-/*.burger-item-button{
-    background-color: #FF6347;
     color: white; 
     padding: 0.5rem 1rem; 
     text-decoration: none; 
@@ -248,7 +233,115 @@ body {
     font-size: 1rem; 
     font-weight: bold;
     transition: background-color 0.3s ease;
-}*/
+}
+
+.burger-item-button:hover {
+    background-color: #e5533d;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Exclusive Items Section */
+.exclusive-items {
+    background-color: #fffaf0; /* Light background for a soft effect */
+    padding: 2rem 1rem;
+}
+
+.exclusive-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.exclusive-item:hover {
+    transform: scale(1.05);
+}
+
+.exclusive-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.exclusive-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.exclusive-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.exclusive-item .cta-button {
+    background-color: #FF6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Promotions Section */
+.promotions {
+    background-color: #e0b089;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.promotions h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.promotion-item {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.promotion-item:hover {
+    transform: scale(1.05);
+}
+
+.promotion-item h3 {
+    font-size: 1.2rem;
+}
+
+.promotion-item p {
+    font-size: 0.9rem;
+    color: #f8f8f8;
+}
+
+/* Separator Style */
+.separator {
+    height: 3px;
+    background-color: #ff6347;
+    width: 70%;
+    margin: 2rem auto;
+}
+
 
 footer {
     background-color: #333;
