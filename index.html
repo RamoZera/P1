@@ -4,106 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bite Delight - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header with Navbar -->
-    <header>
+    
+    <header>   
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="products.html">Products</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#tos">TOS</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
             </ul>
+
             <div class="logo">
                 <a href="index.html"><img src="assets/logo/logo.png" alt="Bite Delight Logo"></a>
             </div>
         </nav>
     </header>
-
-    <!-- Hero Banner -->
+    
     <section class="hero-section">
+        <div class="product-images">
+            <img src="assets/burgers/home-section-1.png" alt="Burger 1">
+            <img src="assets/burgers/home-section-2.png" alt="Burger 2">
+            <img src="assets/burgers/home-section-3.png" alt="Burger 3">
+            <img src="assets/burgers/homer-section-4.png" alt="Burger 4">
+        </div>
         <div class="hero-content">
-            <h1>Unbeatable Flavor, Every Bite</h1>
-            <p>Indulge in our exclusive, limited-time items and promotions.</p>
-            <a class="cta-button" href="order.html">Order Now</a>
-            <a class="cta-button" href="#promotions">See Promotions</a>
+            <h1 style="color: white; font-size: 3rem;">Welcome to Our Fast Food Heaven!</h1>
+
+            <a href="products.html" class="cta-button">Order Now</a>
         </div>
     </section>
-
-    <!-- Exclusive Items Section -->
-    <section class="exclusive-items">
+    <section class="limited-items">
         <h2 style="text-align: center;">Limited Time Exclusives</h2>
         <hr class="separator">
-        <div class="items-container">
+        <div class="products-items-container">
             <div class="item">
                 <img src="assets/burgers/exclusive-burger-1.png" alt="Exclusive Burger">
-                <h3>Fiery BBQ Blast</h3>
-                <p>A spicy kick to our classic BBQ delight. Try it before it’s gone!</p>
+                <h3>Grilled o'Cheetos</h3>
+                <p>Grilled patty, but with a hint of cheetos... ol'Cheetos way</p>
                 <span class="countdown">Ends in: 5 Days</span>
-                <a class="burger-item-button" href="exclusive1.html">Order Now</a>
+                <a class="item-button" href="exclusive1.html">Order Now</a>
             </div>
             <div class="item">
                 <img src="assets/burgers/exclusive-burger-2.png" alt="Exclusive Burger">
-                <h3>Fiery BBQ Blast</h3>
-                <p>A spicy kick to our classic BBQ delight. Try it before it’s gone!</p>
+                <h3>Chicken o'Cheetos</h3>
+                <p>Fried chicken sandwich, but with a hint of cheetos... ol'Cheetos way</p>
                 <span class="countdown">Ends in: 5 Days</span>
-                <a class="burger-item-button" href="exclusive2.html">Order Now</a>
+                <a class="item-button" href="exclusive2.html">Order Now</a>
             </div>
             <div class="item">
-                <img src="assets/burgers/exclusive-burger-1.png" alt="Exclusive Burger">
-                <h3>Fiery BBQ Blast</h3>
-                <p>A spicy kick to our classic BBQ delight. Try it before it’s gone!</p>
+                <img src="assets/burgers/exclusive-burger-3.png" alt="Exclusive Burger">
+                <h3>Master Rosti Montagnard</h3>
+                <p>A french inspired burger, try it before <i>le hamburger disparaît</i> </p>
                 <span class="countdown">Ends in: 5 Days</span>
-                <a class="burger-item-button" href="exclusive3.html">Order Now</a>
+                <a class="item-button" href="exclusive3.html">Order Now</a>
             </div>
-            
-            <!-- Repeat structure for other exclusive items -->
         </div>
     </section>
 
-    <!-- Promotions Section -->
-    <section class="promotions" id="promotions">
-        <h2>Today’s Deals</h2>
-        <hr class="separator">
-        <div class="promo-container">
-            <div class="promo-item">
-                <img src="assets/burgers/limited-burger-1.png" alt="2 for 1 Burgers">
-                <h3>2-for-1 Burgers</h3>
-               
-                <a class="burger-item-button" href="promo-details.html">See Details</a>
-            </div>
-            <!-- Repeat for other promotions -->
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
-        <h2 style="text-align: center;">Fan Favorites</h2>
-        <hr class="separator">
-        <div class="products-container">
-            <div class="product-item">
-                <img src="assets/popular/popular-item1.png" alt="The Classic Bite">
-                <h3>The Classic Bite</h3>
-                <p>A timeless favorite with all the right flavors.</p>
-                <a class="product-button" href="menu.html">View Menu</a>
-            </div>
-            <!-- Repeat structure for other popular items -->
-        </div>
-    </section>
-
-    <!-- Footer with Optional Location Map -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Bite Delight. All rights reserved.</p>
-            <div class="location-finder">
-                <h3>Find a Bite Delight Near You</h3>
-                <input type="text" placeholder="Enter Zip Code">
-                <button class="location-button">Find Location</button>
+            <div class="footer-logo">
+                <img src="assets/logo/logo.png" alt="Bite Delight Logo">
             </div>
+            <p>&copy; 2024 Bite Delight. All rights reserved.</p>
         </div>
     </footer>
+    
 </body>
 </html>

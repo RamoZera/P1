@@ -6,20 +6,42 @@ body {
     box-sizing: border-box;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff5e1;  /* Navbar background color */
-    padding: 1rem 2rem; /* Padding for the navbar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    position: fixed; /* Fix the navbar to the top */
-    top: 0; /* Position at the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+.separator {
+    border: none;
+    height: 2px; 
+    background-color: #ff6347; 
+    margin: 1rem auto; 
+    width: 80%; 
 }
 
+/*-------------------------------------------------FOOTER-------------------------------------------------*/
+
+footer {
+    background-color: #fff5e1; 
+    padding: 0.5rem 0; 
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    border-top: 1px solid #e0b089; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-logo img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 0.5rem; 
+}
+
+footer p {
+    color: #555; 
+    font-size: 0.8rem; 
+    margin: 0; 
+}
+/*--------------------------------------------------------------------------LOGO------------------------------------------------------------------------*/
 
 .logo {
     position: absolute;
@@ -28,201 +50,234 @@ body {
 }
 
 .logo img {
-    max-height: 150px; /* Increase the height of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin: -20px 0; /* Adjust vertical positioning if needed */
+    max-height: 150px; 
+    height: auto; 
+    margin: -20px 0; 
+}
+
+/*--------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff5e1;  
+    padding: 1rem 2rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
 }
 
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem; /* Increased gap for better spacing */
+    gap: 2rem; 
 }
 
 .nav-links a {
     color: #e0b089;
-    ; /* White text for contrast */
     text-decoration: none;
-    font-size: 1.1rem; /* Slightly larger font size */
-    transition: color 0.3s; /* Smooth transition on hover */
+    font-size: 1.1rem; 
+    transition: color 0.3s; 
 }
 
 .nav-links a:hover {
-    color: #f0e68c; /* Light yellow on hover for a fun effect */
+    color: #f0e68c; 
 }
 
-.hero-section {
-    background-image: url('hero-image.jpg');
-    background-color: #e0b089;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 5rem 1rem;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
-.items-title {
-    font-size: 3rem; /* Adjust size as needed */
-    color: #333; /* Color to match your theme */
-    text-align: center; /* Center the text */
-    margin: 2rem 0; /* Add spacing */
-    font-weight: bold; /* Make it bold */
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropbtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
+/*--------------------------------------------------------------------------OVERALL BUTTON STYILING---------------------------------------------------------------*/
 
 .cta-button {
     background-color: #FF6347;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+}
+
+/*--------------------------------------------------------------------------BANNER (HOMEPAGE)--------------------------------------------------------------------*/
+
+.hero-section {
+    position: relative;
+    background-color: #e0b089;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    overflow: hidden;
+    padding-top: 200px;
+    margin-top: 0;
+    height: 150px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    transform: translateY(-50%);
+    max-width: 600px;
+    margin: 0 auto;
+    bottom: 15%;
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    z-index: 1; 
+    padding-top: 175px;
+}
+
+.product-images img {
+    width: 15%; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.1);
+}
+
+/*---------------------------------------------------------------------EXCLUSIVE ITEMS (HOMEPAGE)-----------------------------------------------------------------*/
+
+.limited-items {
+    background-color: #fffaf0; 
+    padding: 2rem 1rem;
+}
+
+
+
+.limited-items-item:hover {
+    transform: scale(1.05);
+}
+
+.limited-items img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.limited-items h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.limited-items p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.limited-items .cta-button {
+    background-color: #FF6347;
+    color: white;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     margin-top: 1rem;
     display: inline-block;
 }
 
-.featured-items, .testimonials, .about-us {
+/*---------------------------------------------------------ITEMS (HOMEPAGE and PRODUCTS PAGE)-----------------------------------------------------------*/
+
+.featured-items{
     padding: 2rem 1rem;
     text-align: center;
 }
 
-.separator {
-    border: none; /* Remove default border */
-    height: 2px; /* Height of the line */
-    background-color: #ff6347; /* Match the theme color */
-    margin: 1rem auto; /* Center and add vertical spacing */
-    width: 80%; /* Adjust the width as needed */
+.products-items-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 200px; 
+    padding-left: 120px;
 }
 
+/*--------------------------------------------------------------------------ITEMS (BURGERS PAGE)------------------------------------------------------------------*/
 
 .items-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+    padding: 2rem 1rem; /
 }
 
-/* Styling for Each Item */
 .item {
-    background-color: #ffe4b5; /* Light tan for a warmer feel */
+    background-color: #ffe4b5; 
     border-radius: 10px;
     padding: 1.5rem;
     max-width: 300px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-/* Hover Effect for Boxes */
 .item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styling with Border Radius */
 .item img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
 }
 
-.item:hover img {
-    transform: scale(1.1);
-}
-
-/* Title and Description Styling */
 .item h3 {
     margin: 0.5rem 0;
     color: #333;
     font-size: 1.2rem;
 }
 
-.item p {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-
-/* Button Styling */
-.burger-item-button {
-    background-color: #ff6347;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.95rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.burger-item-button:hover {
-    background-color: #e5533d;
-    transform: translateY(-3px); /* Subtle lift effect on hover */
-}
-
-.testimonial {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
-
-.burgers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1.5rem; /* Space between items */
-    padding: 2rem 1rem; /* Padding around the grid */
-}
-
-.burger-item {
-    background-color: #ffe4b5; 
-    border-radius: 10px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-between; /* Space between image and text */
-}
-
-.burger-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.burger-item img {
-    width: 100%; /* Ensure the image takes the full width of the box */
-    height: 200px; /* Set a fixed height for the image */
-    object-fit: cover; /* Maintain aspect ratio while filling the height */
-    border-radius: 8px; /* Keep the border radius for rounded corners */
-}
-
-.burger-item h3 {
-    margin: 0.5rem 0;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-.burger-item p {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-
-.burger-item-button {
+.item-button {
     background-color: #ff6347;
     color: white; 
     padding: 0.5rem 1rem; 
@@ -235,119 +290,193 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.burger-item-button:hover {
+.item-button:hover {
     background-color: #e5533d;
 }
 
-/* Section Titles */
-.section-title {
+/*-------------------------------------------------CONTACT SECTION-------------------------------------------------*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #fffaf0; 
+    text-align: center;
+}
+
+.contact-section h1 {
     font-size: 2.5rem;
     color: #333;
-    text-align: center;
-    margin-top: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Exclusive Items Section */
-.exclusive-items {
-    background-color: #fffaf0; /* Light background for a soft effect */
-    padding: 2rem 1rem;
-}
-
-.exclusive-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 1.5rem;
-    max-width: 280px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.exclusive-item:hover {
-    transform: scale(1.05);
-}
-
-.exclusive-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.exclusive-item h3 {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.exclusive-item p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.exclusive-item .cta-button {
-    background-color: #FF6347;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    display: inline-block;
-}
-
-/* Promotions Section */
-.promotions {
-    background-color: #e0b089;
-    color: #fff;
-    padding: 2.5rem 1rem;
-    text-align: center;
-}
-
-.promotions h2 {
-    font-size: 2.5rem;
-    color: white;
     margin-bottom: 1.5rem;
 }
 
-.promotion-item {
-    background-color: #ff6347;
-    color: white;
-    border-radius: 10px;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+    max-width: 800px; 
+    padding: 1rem; 
+}
+
+.contact-info, .contact-form {
+    width: 100%; 
+    background-color: #ffe4b5;
     padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.promotion-item:hover {
-    transform: scale(1.05);
+.contact-info h2 {
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.promotion-item h3 {
-    font-size: 1.2rem;
+.contact-info p {
+    color: #555;
+    margin-bottom: 1rem;
 }
 
-.promotion-item p {
-    font-size: 0.9rem;
-    color: #f8f8f8;
+.contact-info ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Separator Style */
-.separator {
-    height: 3px;
-    background-color: #ff6347;
-    width: 70%;
-    margin: 2rem auto;
+.contact-info ul li {
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-footer {
-    background-color: #333;
+.contact-form label {
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fffaf0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #FF6347;
     color: white;
-    text-align: center;
-    padding: 1rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
+
+.contact-form button:hover {
+    background-color: #e5533d;
+}
+
+/*-------------------------------------------------FAQ PAGE-------------------------------------------------*/
+
+main {
+    padding-top: 100px;
+    background-color: #fff; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e0b089;  
+}
+
+.faq-item {
+    background-color: #f0e68c;  
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px; 
+}
+
+.faq-item h2 {
+    margin: 0;
+    cursor: pointer; 
+}
+
+.faq-item p {
+    margin: 0.5rem 0 0 0;
+}
+
+/*-------------------------------------------------ABOUT PAGE-------------------------------------------------*/
+
+main {
+    padding: 2rem;
+    background-color: #fff; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section, .team-section {
+    margin-bottom: 2rem;
+}
+
+.about-section h1, .team-section h2 {
+    text-align: center;
+    color: #e0b089; 
+}
+
+.about-section p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: #e0b089; 
+}
+
+.team-member p {
+    color: #555; 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

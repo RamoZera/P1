@@ -4,76 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flame Grilled Burgers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="products.html">Products</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#tos">TOS</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
             </ul>
+
             <div class="logo">
-                <a href="index.html"><img src="assets/logo/logo.png" alt="Restaurant Logo"></a>
+                <a href="index.html"><img src="assets/logo/logo.png" alt="Bite Delight Logo"></a>
             </div>
         </nav>
     </header>
 
-    <section class="flame-grilled-burgers">
+    <section>
         <h2>Flame Grilled Burgers</h2>
-        <div class="burgers-container">
-            <div class="burger-item">
+        <div class="items-container">
+            <div class="item">
                 <img src="assets/snacks/snacks.png" alt="Flame Grilled Burger 1">
                 <h3>Wing Wonders</h3>
                 <p>Delicious Crunchy Wings</p>
-                <a class="burger-item-button" href="details/snack0.html">View More</a>
+                <a class="item-button" href="details/snack0.html">View More</a>
             </div>
     
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-1.png" alt="Flame Grilled Burger 2">
                 <h3>Golden Rings</h3>
                 <p>Perfectly seasoned onion rings</p>
-                <a class="burger-item-button" href="details/snack1.html">View More</a>
+                <a class="item-button" href="details/snack1.html">View More</a>
             </div>
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-2.png" alt="Flame Grilled Burger 3">
                 <h3>Cheddar Poppers</h3>
                 <p>Chessy flavorful balls.</p>
-                <a class="burger-item-button" href="details/snack2.html">View More</a>
+                <a class="item-button" href="details/snack2.html">View More</a>
             </div>
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-3.png" alt="Flame Grilled Burger 3">
                 <h3>Bacon Bliss Fries</h3>
                 <p>Golden crispy fried loaded with bacon and cheese.</p>
-                <a class="burger-item-button" href="details/snack3.html">View More</a>
+                <a class="item-button" href="details/snack3.html">View More</a>
             </div>
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-4.png" alt="Flame Grilled Burger 3">
                 <h3>Supreme Loaded Fries</h3>
                 <p>Our supreme fries loaded with flavours.</p>
-                <a class="burger-item-button" href="details/snack4.html">View More</a>
+                <a class="item-button" href="details/snack4.html">View More</a>
             </div>
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-5.png" alt="Flame Grilled Burger 3">
                 <h3>Mozzarella Melts</h3>
                 <p>Do you like mozzarella? Try this...</p>
-                <a class="burger-item-button" href="details/snack5.html">View More</a>
+                <a class="item-button" href="details/snack5.html">View More</a>
             </div>
-            <div class="burger-item">
+            <div class="item">
                 <img src="assets/snacks/snacks-6.png" alt="Flame Grilled Burger 3">
                 <h3>Deligth Nuggets</h3>
                 <p>Flavourful chicken nuggets.</p>
-                <a class="burger-item-button" href="details/snack6.html">View More</a>
+                <a class="item-button" href="details/snack6.html">View More</a>
             </div>
-            <!-- Add more burger items as needed -->
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Fast Food Restaurant. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo/logo.png" alt="Bite Delight Logo">
+            </div>
+            <p>&copy; 2024 Bite Delight. All rights reserved.</p>
+        </div>
     </footer>
+    
 </body>
 </html>
