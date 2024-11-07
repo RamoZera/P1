@@ -1,0 +1,234 @@
+{
+    "burgers": [
+      {
+        "id": "burger1",
+        "name": "Bite of Bacon Bliss",
+        "description": "Savor the flavor of a juicy flame-grilled patty topped with crispy bacon, melted cheddar cheese, fresh lettuce, vine-ripened tomatoes, and a dollop of creamy mayo on a toasted sesame seed bun.",
+        "price": "9.99",
+        "image": "../assets/burgers/burger-grilled-1.png"
+      },
+      {
+        "id": "burger2",
+        "name": "Egg-cellent Delight",
+        "description": "Indulge in a perfectly seasoned beef patty, grilled to perfection, crowned with a fried egg, crispy bacon, melted American cheese, fresh arugula, and a tangy mustard sauce on a soft brioche bun.",
+        "price": "8.99",
+        "image": "../assets/burgers/burger-grilled-2.png"
+      },
+      {
+        "id": "burger3",
+        "name": "Delightful Whoppuh",
+        "description": "Enjoy our signature smoky-flavored beef patty, layered with smoky BBQ sauce, crunchy pickles, fresh lettuce, ripe tomatoes, melted cheddar, and a zesty mayo on a warm, toasted bun.",
+        "price": "10.99",
+        "image": "../assets/burgers/burger-grilled-3.png"
+      },
+      {
+        "id": "burger4",
+        "name": "Double Delight Western",
+        "description": "A double stack of succulent grilled patties, topped with crispy onion rings, melted cheddar cheese, hickory-smoked bacon, tangy BBQ sauce, and fresh lettuce on a toasted sesame seed bun.",
+        "price": "11.99",
+        "image": "../assets/burgers/burger-grilled-4.png"
+      },
+      {
+        "id": "burger5",
+        "name": "Steakhouse Sensation",
+        "description": "Dive into a thick, juicy steakhouse patty, topped with caramelized onions, sautéed mushrooms, melted Swiss cheese, fresh lettuce, and a creamy horseradish sauce on a toasted artisan bun.",
+        "price": "12.99",
+        "image": "../assets/burgers/burger-grilled-5.png"
+      },
+      {
+        "id": "burger6",
+        "name": "Bite King",
+        "description": "Relish the royal taste of a king-sized grilled beef patty, topped with crispy bacon, melted cheddar, fresh lettuce, tomato slices, crunchy pickles, and a smoky BBQ sauce on a sesame seed bun.",
+        "price": "13.99",
+        "image": "../assets/burgers/burger-grilled-6.png"
+      },
+      {
+        "id": "burger7",
+        "name": "BBQ Bliss",
+        "description": "Experience the bliss of a tender grilled patty, smothered in rich BBQ sauce, topped with crispy onion straws, melted cheddar cheese, fresh lettuce, and ripe tomatoes on a soft brioche bun.",
+        "price": "9.99",
+        "image": "../assets/burgers/burger-grilled-7.png"
+      },
+      {
+        "id": "chickenburger1",
+        "name": "Bacon Duo Delight",
+        "description": "Enjoy a savory grilled chicken patty, paired with crispy bacon strips, melted cheddar cheese, fresh lettuce, and a zesty ranch sauce, all nestled in a toasted sesame seed bun.",
+        "price": "10.49",
+        "image": "../assets/burgers/burger-chicken-1.png"
+      },
+      {
+        "id": "chickenburger2",
+        "name": "Ultimate Crisp Chicken",
+        "description": "Bite into the crispiest chicken patty, topped with fresh lettuce, juicy tomato slices, melted pepper jack cheese, and a tangy honey mustard sauce, all served on a toasted brioche bun.",
+        "price": "11.49",
+        "image": "../assets/burgers/burger-chicken-2.png"
+      },
+      {
+        "id": "chickenburger3",
+        "name": "Double Crisp Royale",
+        "description": "Twice the chicken, twice the crispiness, with two golden-fried chicken patties, topped with creamy coleslaw, fresh pickles, melted Swiss cheese, and a spicy mayo sauce on a toasted sesame seed bun.",
+        "price": "12.49",
+        "image": "../assets/burgers/burger-chicken-3.png"
+      },
+      {
+        "id": "chickenburger4",
+        "name": "Chicken Delight",
+        "description": "A towering delight of a tender chicken patty, topped with fresh lettuce, sliced tomatoes, melted provolone cheese, crispy bacon, and a creamy garlic aioli on a toasted ciabatta bun.",
+        "price": "13.49",
+        "image": "../assets/burgers/burger-chicken-4.png"
+      },
+      {
+        "id": "chickenburger5",
+        "name": "Longbird",
+        "description": "Savor the taste of a long, savory chicken patty, topped with fresh lettuce, tomato slices, melted mozzarella, crispy bacon, and a tangy ranch dressing on a toasted hoagie roll.",
+        "price": "14.49",
+        "image": "../assets/burgers/burger-chicken-5.png"
+      },
+      {
+        "id": "chickenburger6",
+        "name": "Cheddar Chicken Supreme",
+        "description": "Our supreme chicken burger features a grilled chicken patty, topped with smoky cheddar cheese, fresh lettuce, vine-ripened tomatoes, crunchy pickles, and a savory BBQ sauce on a toasted brioche bun.",
+        "price": "15.49",
+        "image": "../assets/burgers/burger-chicken-6.png"
+      }
+    ]
+    ,
+    "desserts": [
+      {
+        "id": "dessert1",
+        "name": "Oreo Dream Shake",
+        "description": "Cool off, with this rich oreo shake.",
+        "price": "5.49",
+        "image": "../assets/desserts/desserts-1.png"
+      },
+      {
+        "id": "dessert2",
+        "name": "KitKat Dream Shake",
+        "description": "Cool off, with this rich kitkat shake.",
+        "price": "5.49",
+        "image": "../assets/desserts/desserts-2.png"
+      },
+      {
+        "id": "dessert3",
+        "name": "KitKat Crumble Delight",
+        "description": "Creamy and tasteful kitkat ice cream.",
+        "price": "6.49",
+        "image": "..assets/desserts/desserts-3.png"
+      },
+      {
+        "id": "dessert4",
+        "name": "Oreo Crumble Delight",
+        "description": "Creamy and tasteful oreo ice cream.",
+        "price": "6.49",
+        "image": "../assets/desserts/desserts-4.png"
+      },
+      {
+        "id": "dessert5",
+        "name": "Choco Bliss",
+        "description": "Vanilla ice cream with chocolate topping.",
+        "price": "5.99",
+        "image": "../assets/desserts/desserts-5.png"
+      },
+      {
+        "id": "dessert6",
+        "name": "Caramel Bliss",
+        "description": "Vanilla ice cream with caramel topping.",
+        "price": "5.99",
+        "image": "../assets/desserts/desserts-6.png"
+      },
+      {
+        "id": "dessert7",
+        "name": "Strawberry Bliss",
+        "description": "Vanilla ice cream with strawberry topping.",
+        "price": "5.99",
+        "image": "../assets/desserts/desserts-7.png"
+      },
+      {
+        "id": "dessert8",
+        "name": "Waffle Wonder",
+        "description": "Rich and sweet waffle with topping of choice.",
+        "price": "7.49",
+        "image": "../assets/desserts/desserts-8.png"
+      },
+      {
+        "id": "dessert9",
+        "name": "Nutella Crumble Delight",
+        "description": "Vanilla ice cream with nutella topping.",
+        "price": "6.49",
+        "image": "../assets/desserts/desserts-9.png"
+      },
+      {
+        "id": "dessert10",
+        "name": "Lion Crumble Delight",
+        "description": "Vanilla ice cream with lion topping.",
+        "price": "6.49",
+        "image": "../assets/desserts/desserts-10.png"
+      },
+      {
+        "id": "dessert11",
+        "name": "M&M Crumble Delight",
+        "description": "Vanilla ice cream with m&m topping.",
+        "price": "6.49",
+        "image": "../assets/desserts/desserts-11.png"
+      },
+      {
+        "id": "dessert12",
+        "name": "Snickers Crumble Delight",
+        "description": "Vanilla ice cream with snicker topping.",
+        "price": "6.49",
+        "image": "../assets/desserts/desserts-12.png"
+      }
+    ],
+    "snacks": [
+      {
+        "id": "snack1",
+        "name": "Wing Wonders",
+        "description": "Delicious Crunchy Wings.",
+        "price": "6.99",
+        "image": "../assets/snacks/snacks-1.png"
+      },
+      {
+        "id": "snack2",
+        "name": "Golden Rings",
+        "description": "Perfectly seasoned onion rings.",
+        "price": "5.99",
+        "image": "../assets/snacks/snacks-2.png"
+      },
+      {
+        "id": "snack3",
+        "name": "Cheddar Poppers",
+        "description": "Cheesy flavorful balls.",
+        "price": "6.49",
+        "image": "../assets/snacks/snacks-3.png"
+      },
+      {
+        "id": "snack4",
+        "name": "Bacon Bliss Fries",
+        "description": "Golden crispy fried loaded with bacon and cheese.",
+        "price": "7.49",
+        "image": "../assets/snacks/snacks-4.png"
+      },
+      {
+        "id": "snack5",
+        "name": "Supreme Loaded Fries",
+        "description": "Our supreme fries loaded with flavors.",
+        "price": "7.49",
+        "image": "../assets/snacks/snacks-5.png"
+      },
+      {
+        "id": "snack6",
+        "name": "Mozzarella Melts",
+        "description": "Do you like mozzarella? Try this...",
+        "price": "6.99",
+        "image": "../assets/snacks/snacks-6.png"
+      },
+      {
+        "id": "snack7",
+        "name": "Delight Nuggets",
+        "description": "Flavorful chicken nuggets.",
+        "price": "6.49",
+        "image": "../assets/snacks/snacks-7.png"
+      }
+    ]
+  }
+  

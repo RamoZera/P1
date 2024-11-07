@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Delight - Burger Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/logo/logo.png" alt="Bite Delight Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../products.html">Products</a>
+                        <a href="../contact.html">Contact</a>
+                        <a href="../about.html">About Us</a>
+                        <a href="../faq.html">FAQ</a>
+                        <a href="../portfolio.html">Portfolio</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   <br><br>
+   
+        <section id="burger-details">
+            <div class="burger-container">
+                <div class="burger-left">
+                    <h2 id="dessert-name"></h2>
+                    <p id="dessert-description"></p>
+                    <img id="dessert-image" src="" alt="Dessert Image">
+                </div>
+                <div class="vertical-line"></div>
+                <div class="burger-right">
+                    <h3>Choose Some Toppings</h3>
+                    <ul id="drink-options">
+                        <li class="drink-item">
+                            <img src="../assets/desserts/oreo.png" alt="Water" class="drink-image">
+                            <div class="counter-box">
+                                <button id="decrement">-</button>
+                                <input type="number" id="input" value="0" readonly>
+                                <button id="increment">+</button>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="order-button"><span id="dessert-price"></span> Order Now</a>
+                </div>
+            </div>
+        </section>
+
+    <br>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../assets/logo/logo.png" alt="Bite Delight Logo">
+            </div>
+            <ul class="footer-links">
+                <li><a href="../privacy.html">Privacy Policy</a></li>
+                <li><a href="../tos.html">Terms of Service</a></li>
+            </ul>
+            <p>&copy; 2024 Bite Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+const decrementButton = document.getElementById('decrement');
+const incrementButton = document.getElementById('increment');
+const inputField = document.getElementById('input');
+
+// Set initial values
+let counter = 0;
+
+// Event listener for decrement button
+decrementButton.addEventListener('click', () => {
+    if (counter > 0) {
+        counter--;
+        inputField.value = counter;
+    }
+});
+
+// Event listener for increment button
+incrementButton.addEventListener('click', () => {
+    if (counter < 3) {
+        counter++;
+        inputField.value = counter;
+    }
+});
+
+    </script>
+
+    <script src="../js/loadDessertDetails.js"></script>
+
+</body>
+</html>
