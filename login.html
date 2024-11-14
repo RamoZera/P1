@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bite Delight - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Itim"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="Bite Delight Logo" /></a>
+        </div>
+        <ul class="nav-links left-side">
+          <li><a href="sign-in.html" id="sign-in-btn">Sign In</a></li>
+          <li><a href="login.html" id="login-btn">Login</a></li>
+        </ul>
+        <ul class="nav-links right-side">
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+            <div class="dropdown-content">
+              <a href="products.html">Products</a>
+              <a href="contact.html">Contact</a>
+              <a href="about.html">About Us</a>
+              <a href="faq.html">FAQ</a>
+              <a href="portfolio.html">Portfolio</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="login-section">
+      <div class="login-container">
+        <h1>Login</h1>
+        <h2 class="separator"></h2>
+
+        <form action="#" method="POST" id="login-form">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="cta-button">Login</button>
+        </form>
+        <div class="form-group">
+          <p>Don't have an account? <a href="sign-in.html">Sign In</a></p>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+
+    <script src="js/login.js"></script>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo/logo.png" alt="Bite Delight Logo" />
+        </div>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="tos.html">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2024 Bite Delight. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
