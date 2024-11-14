@@ -168,24 +168,6 @@ body {
     margin: 0;
 }
 
-/*--------------------------------------------------------------------------OVERALL BUTTON STYILING---------------------------------------------------------------*/
-
-.cta-button {
-    background-color: #FF6347;
-    color: white;
-    padding: 0.7rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #e5533d;
-}
-
 /*--------------------------------------------------------------------------BANNER (HOMEPAGE)--------------------------------------------------------------------*/
 
 .hero-section {
@@ -230,6 +212,22 @@ body {
 
 .product-images img:hover {
     transform: scale(1.1);
+}
+
+.banner-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner-button:hover {
+    background-color: #e5533d;
 }
 
 /*---------------------------------------------------------------------LIMITED ITEMS (HOMEPAGE)-----------------------------------------------------------------*/
@@ -299,7 +297,6 @@ body {
     display: inline-block;
     font-size: 1rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
 .homepage-item-button:hover {
@@ -1013,6 +1010,19 @@ button:nth-child(1):active {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  #logout-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
   }
   
   .profile-info h1 {
