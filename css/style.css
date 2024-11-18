@@ -378,6 +378,78 @@ body {
     background-color: #e5533d;
 }
 
+/*-------------------------------------------------BURGERS, DESSERTS AND SNACKS PAGE-------------------------------------------------*/
+
+.regular-products-section {
+    background-color: #fffaf0;
+    padding: 2rem 1rem;
+}
+
+.regular-products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 40px; 
+    padding-left: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.regular-item {
+    background-color: #ffe4b5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.regular-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.regular-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.homepage-item h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.regular-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.regular-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.regular-button:hover {
+    background-color: #e5533d;
+}
 
 /*-------------------------------------------------CONTACT PAGE-------------------------------------------------*/
 
